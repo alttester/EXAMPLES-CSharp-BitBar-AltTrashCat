@@ -45,7 +45,6 @@ export APPIUM_APPFILE=$PWD/application.apk # App file is at current working fold
 export LICENSE_KEY=$(cat license.txt)
 
 # Install and launch AltTester Desktop
-brew install wget
 wget https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopLinuxBatchmode.zip
 unzip AltTesterDesktopLinuxBatchmode.zip
 cd AltTesterDesktopLinux
