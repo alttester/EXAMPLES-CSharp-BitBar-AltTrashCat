@@ -1,0 +1,11 @@
+# ignore bin directory 
+bin/
+
+#ignore vscode 
+.vscode/
+
+#ignore obj
+obj/
+
+*.bat
+*.txt
