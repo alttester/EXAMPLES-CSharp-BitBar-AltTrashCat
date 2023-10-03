@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="AltTester-Driver" Version="2.0.2" />
     <PackageReference Include="Appium.WebDriver" Version="4.3.1" />
+    <PackageReference Include="JunitXml.TestLogger" Version="3.0.134" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
