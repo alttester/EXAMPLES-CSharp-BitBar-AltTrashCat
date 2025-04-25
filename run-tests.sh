@@ -44,13 +44,13 @@ appium --log-no-colors --log-timestamp
 export APPIUM_APPFILE=$PWD/application.apk # App file is at current working folder
 export LICENSE_KEY=$(cat license.txt)
 
-# Install and launch AltTester Desktop
+# Install and launch AltTester® Desktop
 wget https://alttester.com/app/uploads/AltTester/desktop/AltTesterDesktopLinuxBatchmode.zip
 unzip AltTesterDesktopLinuxBatchmode.zip
 cd AltTesterDesktopLinux
 
-# Start AltTester Desktop from batchmode
-echo "Starting AltTester Desktop ..."
+# Start AltTester® Desktop from batchmode
+echo "Starting AltTester® Desktop ..."
 
 chmod +x ./AltTesterDesktop.x86_64
 ./AltTesterDesktop.x86_64 -batchmode -port 13000 -license $LICENSE_KEY -nographics -termsAndConditionsAccepted &
@@ -64,7 +64,7 @@ dotnet test TestAlttrashCSharp.csproj --logger:junit --filter=MainMenuTests
 echo "==> Collect reports"
 mv TestResults/TestResults.xml TEST-all.xml
 
-echo "Deactivate AltTesterDesktop license"
+echo "Deactivate AltTester® Desktop license"
 cd AltTesterDesktopLinux
 kill -2 `ps -ef | awk '/AltTesterDesktop.x86_64/{print $2}'`
 sleep 10
